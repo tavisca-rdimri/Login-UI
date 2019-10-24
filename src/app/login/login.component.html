@@ -1,0 +1,32 @@
+<div class="main">
+    <div class="headerContainer">
+      On-Call Tracking System
+    </div>
+    <form action="uri" method="POST" enctype="multipart/form-data">
+  
+      <div class="logincontainer">
+        <div id="logintext">LOGIN</div>
+      </div>
+  
+      <div class="container">
+        <label style="padding-left: 10px; color: black;" for="uname"><b>Email ID</b></label>
+        <input class="inputs" type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label style=" padding-left: 10px;color: black; border-radius: 5px" for="psw"><b>Password</b></label>
+        <input class="inputs" type="password" placeholder="Enter Password" name="psw" required>
+  
+        <button style="padding-left:20px;display: inline-block"
+                id="loginButton"
+                type="submit"
+                (click)="onLogin()">Login</button>
+        <button type="button" style="padding-right:20px; display: inline-block"
+                id="forgetButton"
+                (click)="onForget()">Forget Password</button>
+                <div style="display: block; margin: auto;">
+        </div>
+      </div>
+    </form>
+    <div id="footer">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    </div>
+  </div>
